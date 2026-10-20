@@ -1,0 +1,79 @@
+# ── Virtual Environment ───────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Python Cache ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Dataset Raster Besar ──────────────────────────────────────
+data/sentinel1/*.tif
+data/sentinel1/*.tiff
+data/sentinel2/*.tif
+data/sentinel2/*.tiff
+data/labels/*.tif
+data/labels/*.tiff
+data/labels/*.shp
+data/labels/*.dbf
+data/labels/*.shx
+data/labels/*.prj
+data/labels/*.cpg
+# Izinkan file README di folder data
+!data/sentinel1/README.md
+!data/sentinel2/README.md
+!data/labels/README.md
+
+# ── Model Besar ───────────────────────────────────────────────
+models/*.pt
+models/*.pth
+models/*.onnx
+# Izinkan README
+!models/README.md
+
+# ── Patch .npy (bisa besar) ───────────────────────────────────
+outputs/patches/
+
+# ── Hasil Eksperimen (opsional untuk commit) ──────────────────
+outputs/predictions/
+outputs/plots/*.png
+outputs/plots/*.svg
+# Izinkan CSV history dan JSON evaluasi
+!outputs/plots/*.csv
+!outputs/evaluation/*.json
+
+# ── Streamlit ─────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/*.ipynb
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── File Sementara ────────────────────────────────────────────
+*.tmp
+*.temp
+*.log
+tmp/
+temp/
+
+# ── Secrets & Env ─────────────────────────────────────────────
+.env
+*.key
+*.pem
+credentials.json

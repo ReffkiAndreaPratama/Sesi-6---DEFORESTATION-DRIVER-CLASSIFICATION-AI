@@ -1,0 +1,43 @@
+# ForestWatch AI — Dependencies
+# Python 3.11 recommended
+# Install: pip install -r requirements.txt
+#
+# Catatan: torch & torchvision versi CPU. Untuk GPU, lihat
+# https://pytorch.org/get-started/locally/ dan sesuaikan perintah instalasi.
+
+# ── Deep Learning (CPU) ────────────────────────────────────────
+# Instalasi terpisah untuk mendapatkan build CPU:
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+torchvision==0.20.1
+
+# ── Remote Sensing / Raster ───────────────────────────────────
+rasterio==1.4.4
+numpy==2.4.6
+shapely==2.2.0
+
+# ── Data Science ──────────────────────────────────────────────
+pandas==2.2.3
+scikit-learn==1.5.2
+
+# ── Geospasial Vektor ─────────────────────────────────────────
+geopandas==1.2.0
+pyogrio==0.13.0
+pyproj==3.7.2
+
+# ── Web App ───────────────────────────────────────────────────
+streamlit==1.39.0
+streamlit-folium==0.27.4
+
+# ── Visualisasi ───────────────────────────────────────────────
+plotly==7.1.0
+matplotlib==3.9.2
+folium==0.20.0
+
+# ── Utilitas ──────────────────────────────────────────────────
+Pillow==10.3.0
+tqdm==4.66.4
+
+# ── Testing ───────────────────────────────────────────────────
+pytest==9.1.1
+pytest-cov==5.0.0
